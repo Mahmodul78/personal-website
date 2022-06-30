@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#boigraphy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/biography-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.halfSection {
+    width: 40%;
+}
+
+.halfSection .image_1 {
+    width: 100%;
+}
+
+.halfSection h2 {
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.halfSection h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #FF3887;
+    margin-bottom: 27px;
+}
+
+.halfSection h3 {
+    font-size: 28px;
+    margin-bottom: 21px;
+}
+
+.halfSection p {
+    font-size: 17px;
+    color: dimgray;
+    text-align: justify;
+}
+
+.halfSection a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #FF3887;
+    color: #fff;
+    padding: 10px 37px;
+    border-radius: 5px;
+}
+
+.lead1 {
+    margin-bottom: 37px;
+}
+
+#boigraphy .halfSection p {
+    margin-bottom: 47px;
+}
+
+#latestWork {
+    background-image: url(images/latest-work-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#latestWork .work {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#latestWork h1 {
+    text-align: center;
+    font-size: 47px;
+    font-weight: 700;
+    padding: 97px 0;
+}
+
+#latestWork .work div {
+    width: 27%;
+}
+
+#latestWork .work div img {
+    width: 100%;
+}
+
+#clientWork {
+    background-image: url(images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clientWork .client {
+    text-align: center;
+}
+
+#clientWork .client h2 {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 27px 0px;
+}
+
+#clientWork .client h4 {
+    font-size: 22px;
+}
+
+#clientWork .client span {
+    font-size: 14px;
+    color: dimgray;
+}
+
+#clientWork .client .nameDetails {
+    margin-bottom: 27px;
+}
+
+#clientWork .client .clientPara {
+    margin-bottom: 67px;
+    font-weight: 700;
+    color: rgb(77, 74, 74);
+}
+
+#clientWork .client .newR {
+    width: 350px;
+    color: #fff;
+    background-image: linear-gradient(90deg, #b1557a, #FF3887);
+    text-align: center;
+    margin: auto;
+    padding: 37px 240px;
+    border-radius: 15px;
+}
+
+#clientWork .client .newR p {
+    font-size: 18px;
+    margin-bottom: 27px;
+}
+
+#clientWork .client .newR .mail {
+    font-size: 22px;
+}
+
+footer {
+    text-align: center;
+    padding: 27px;
+}
+
+footer a {
+    text-decoration: none;
+    color: dimgray;
+    font-size: 22px;
+}
+
+
+/*----------------- Media Query Start is given below: -----------------*/
+
+
+@media only screen and (max-width:767.98px) {
+    #home , #boigraphy{
+        display: block;
+    }
+    section#home{
+        height: 67vh;
+    }
+    #home .halfSection{
+        width: 100%;
+        text-align: center;
+        padding: 77px 0;
+    }
+    #home .halfSection p{
+        text-align: center;
+    }
+    #home .halfSection .image_1{
+        display: none;
+    }
+    #boigraphy{
+        height: auto;
+        text-align: center;
+    }
+    #boigraphy .halfSection{
+        width: 100%;
+        text-align: center;
+        padding: 77px 0;
+    }
+    #boigraphy .halfSectionMedia{
+        width: 80%;
+        margin: auto;
+    }
+    #boigraphy .halfSectionMedia p{
+        text-align: center;
+    }
+    #latestWork{
+        height: auto;
+    }
+    #latestWork .work{
+        display: block;
+    }
+    #latestWork .work div{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 27px;
+    }
+    #clientWork{
+        height: auto;
+    }
+    #clientWork .client h2{
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width:575.98px){
+    #clientWork .client .newR{
+        width: 280px;
+        padding: 37px 0;
+    }
+    #clientWork .client .newR p{
+        font-size: 17px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    #clientWork .client .newR .mail{
+        font-size: 17px;
+    }
+    footer a{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width:576px){
+    #clientWork .client .newR{
+        padding: 37px 80px;
+    }
+}
+
+@media only screen and (min-width:768px){
+    #clientWork .client .newR{
+        padding: 37px 177px;
+    }
+}
